@@ -1,0 +1,31 @@
+[game]
+name = "Pepsiman"
+id = "SLPS-01762"
+exe = "input/SLPS_017.62"
+disc = "disc/Pepsiman (Japan).cue"
+load_address = "0x80010000"
+entry_pc = "0x80042C58"
+text_size = "0x00085800"
+stack_base = "0x801FFFF0"
+
+[recompiler]
+seeds = "seeds/functions.txt"
+strict = true
+out_dir = "generated"
+
+[runtime]
+window_title = "Pepsiman Recompiled"
+bios_hle = false
+openbios = true
+overlay_cache = true
+
+[video]
+renderer = "software"
+
+[prepare_disc]
+track_01_sha1 = "f0b1fa55fbbcfe41f9f373000f42cb93b295c852"
+track_01_md5 = "5339db1747c29aadd9c792508f66dd12"
+track_01_size = 124164432
+
+[netplay]
+require_cue = true
